@@ -5,10 +5,13 @@ import EpisodePreview from "../../components/EpisodePreview";
 import Host from "../../components/Host";
 import SubscribeForm from "../../components/SubscribeForm";
 import Comment from "../../components/Comment";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
   return (
     <>
+      <Navbar />
 
       <header className={styles.sectionHeader}>
         <div className="section-inner">
@@ -38,7 +41,7 @@ const HomePage = () => {
               <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
                 <div className={styles.sectionHeaderWrapperContent}>
                   <h1 className={styles.sectionHeaderWrapperContentTitle}>
-                    Take your podcast to the <span className="dash">
+                    Take your podcast to the <span className={styles.dash}>
                   next
                   <svg width="160" height="11" viewBox="0 0 160 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd"
@@ -243,6 +246,7 @@ const HomePage = () => {
         </div>
       </section>
 
+      <Footer />
     </>
   );
 };
