@@ -4,6 +4,7 @@ import styles from './HomePage.module.scss';
 import EpisodePreview from "../../components/EpisodePreview";
 import Host from "../../components/Host";
 import SubscribeForm from "../../components/SubscribeForm";
+import Comment from "../../components/Comment";
 
 const HomePage = () => {
   return (
@@ -226,6 +227,21 @@ const HomePage = () => {
       <Host />
 
       <SubscribeForm />
+
+      <section className={styles.sectionComments}>
+        <div className="section-inner">
+          <div className={`${styles.sectionCommentsWrapper} container`}>
+            <div className="row">
+              <Comment />
+              <Comment />
+              <Comment />
+              <Comment />
+              <Comment />
+              <Comment />
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   );

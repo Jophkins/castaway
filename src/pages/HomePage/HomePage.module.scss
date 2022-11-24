@@ -167,3 +167,41 @@
 }
 
 // / EPISODES
+
+// COMMENTS
+
+.sectionComments {
+  margin-top: 100px;
+
+  &Wrapper {
+    &Item {
+      margin-bottom: 20px;
+      padding: 40px;
+      min-height: 320px;
+      background: #000000;
+      border-radius: 32px;
+
+      &:hover {
+        background: #333333;
+      }
+
+      &Title {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        color: #FFFFFF;
+      }
+
+      &Author {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+// / COMMENTS
