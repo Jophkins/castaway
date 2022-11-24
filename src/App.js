@@ -1,14 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import HomePage from "./pages/HomePage";
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      
+      <AppRouter />
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styles from './Footer.module.scss';
+import {ABOUT_ROUTE, CONTACT_ROUTE, EPISODES_ROUTE, HOME_ROUTE} from "../../utils/consts";
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -56,10 +58,18 @@ const Footer = () => {
             <div className="col-4 col-lg-2">
               <div className={styles.sectionFooterWrapperLinks}>
                 <ul>
-                  <li><a href="/#">Home</a></li>
-                  <li><a href="/#">About</a></li>
-                  <li><a href="/#">Episodes</a></li>
-                  <li><a href="/#">Contact</a></li>
+                  <li>
+                    <NavLink to={HOME_ROUTE}>Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={ABOUT_ROUTE}>About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={EPISODES_ROUTE}>Episodes</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={CONTACT_ROUTE}>Contact</NavLink>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -146,8 +156,8 @@ const Footer = () => {
                       <defs>
                         <linearGradient id="paint0_linear_2_34" x1="15.8298" y1="0" x2="15.8298" y2="32"
                                         gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FF7602"/>
-                          <stop offset="1" stop-color="#FF3502"/>
+                          <stop stopColor="#FF7602"/>
+                          <stop offset="1" stopColor="#FF3502"/>
                         </linearGradient>
                       </defs>
                     </svg>
@@ -165,8 +175,8 @@ const Footer = () => {
                       <defs>
                         <linearGradient id="paint0_linear_2_30" x1="16.0001" y1="0" x2="16.0001" y2="32"
                                         gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#F452FF"/>
-                          <stop offset="1" stop-color="#832BC1"/>
+                          <stop stopColor="#F452FF"/>
+                          <stop offset="1" stopColor="#832BC1"/>
                         </linearGradient>
                         <clipPath id="clip0_2_30">
                           <rect width="32" height="32" fill="white"/>

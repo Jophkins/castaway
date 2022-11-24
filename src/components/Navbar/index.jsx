@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styles from './Navbar.module.scss';
+import {NavLink} from "react-router-dom";
+import {ABOUT_ROUTE, CONTACT_ROUTE, EPISODES_ROUTE, HOME_ROUTE} from "../../utils/consts";
 
 const Navbar = () => {
   return (
@@ -27,16 +29,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="toggleMobileMenu">
           <ul className="navbar-nav ms-auto text-end">
             <li className="nav-item">
-              <a href="/#" className={`nav-link ${styles.linkItem} ${styles.activeLink}`}>Home</a>
+              <NavLink className={`nav-link ${styles.linkItem}`} to={HOME_ROUTE}>Home</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/#" className={`nav-link ${styles.linkItem}`}>Episodes</a>
+              <NavLink className={`nav-link ${styles.linkItem}`} to={EPISODES_ROUTE}>Episodes</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/#" className={`nav-link ${styles.linkItem}`}>About</a>
+              <NavLink className={`nav-link ${styles.linkItem}`} to={ABOUT_ROUTE}>About</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/#" className={`nav-link ${styles.linkItem}`}>Contact</a>
+              <NavLink className={`nav-link ${styles.linkItem}`} to={CONTACT_ROUTE}>Contact</NavLink>
             </li>
           </ul>
         </div>
