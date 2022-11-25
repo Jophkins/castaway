@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-md ${styles.nav}`}>
       <div className={`${styles.navWrapper} container`}>
-        <a href="/#" className="navbar-brand">
+        <NavLink to={HOME_ROUTE}>
           <svg width="160" height="33" viewBox="0 0 160 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_6)">
               <path
@@ -21,7 +21,7 @@ const Navbar = () => {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
                 aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggle-icon"></span>

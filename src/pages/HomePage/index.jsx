@@ -5,6 +5,8 @@ import EpisodePreview from "../../components/EpisodePreview";
 import Host from "../../components/Host";
 import SubscribeForm from "../../components/SubscribeForm";
 import Comment from "../../components/Comment";
+import {EPISODES_ROUTE} from "../../utils/consts";
+import {NavLink} from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -213,7 +215,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6">
-                <button className={`${styles.sectionEpisodesWrapperBtn} float-end`}>View all episodes</button>
+                <NavLink  to={EPISODES_ROUTE}>
+                  <button className={`${styles.sectionEpisodesWrapperBtn} float-end`}>View all episodes</button>
+                </NavLink>
               </div>
             </div>
             <EpisodePreview/>
