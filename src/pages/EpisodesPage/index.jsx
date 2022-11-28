@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import styles from './EpisodesPage.module.scss';
 
 const EpisodesPage = () => {
+
+  useEffect(() => {
+    const scrollToTop = () => window.scrollTo(0, 0);
+
+    scrollToTop()
+  }, []);
+
   return (
     <section className={styles.sectionEpisodes}>
       <div className="section-inner">

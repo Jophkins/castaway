@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styles from './Host.module.scss';
+import {NavLink} from "react-router-dom";
+import {ABOUT_ROUTE} from "../../utils/consts";
 
 const Host = () => {
   return (
@@ -15,11 +17,13 @@ const Host = () => {
               <div className={styles.sectionHostWrapperDescription}>
                 Jacob has a background in audio engineering, and has been podcasting since the early days.
                 <br/><br/>
-                  He’s here to help you level up your game by sharing everything he’s learned along the way.
+                He’s here to help you level up your game by sharing everything he’s learned along the way.
               </div>
               <div className={styles.sectionHostWrapperBtnBlock}>
-                <img className="img-fluid" src={require('../../assets/img/host-btn.png')} alt=""/>
-                  <span>Meet your host</span>
+                <NavLink to={ABOUT_ROUTE}>
+                  <img className="img-fluid" src={require('../../assets/img/host-btn.png')} alt=""/>
+                </NavLink>
+                <span>Meet your host</span>
               </div>
             </div>
             <div className={`col-12 col-lg-6 ${styles.sectionHostWrapperImage} p-lg-5`}>
